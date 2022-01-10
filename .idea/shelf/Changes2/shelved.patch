@@ -1,0 +1,25 @@
+Index: lesson_4/hometask_04.5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Task 5\r\n\r\nfrom functools import reduce\r\n\r\ntask5 = [i for i in range(100, 1001) if i % 2 == 0]\r\nresult = reduce(lambda a, b: a * b, task5)\r\nprint(\"Результат умножения всех четных чисел, равен:\\n\", result)\r\n\r\n\r\n# Наверно так по лучше.. но, не знаю? как с оптимизацией. Наверно можно еще короче записать ??\r\n\r\n# task5 = [i for i in range(100, 1001) if i % 2 == 0]\r\n# print(\"Результат умножения всех четных чисел, равен:\\n\", reduce(lambda a, b: a * b, task5))
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/lesson_4/hometask_04.5.py b/lesson_4/hometask_04.5.py
+--- a/lesson_4/hometask_04.5.py	(revision 3fc055fe55708f3239db0dbd37ff80168e0de769)
++++ b/lesson_4/hometask_04.5.py	(date 1641765743785)
+@@ -4,10 +4,5 @@
+ 
+ task5 = [i for i in range(100, 1001) if i % 2 == 0]
+ result = reduce(lambda a, b: a * b, task5)
+-print("Результат умножения всех четных чисел, равен:\n", result)
+-
+-
+-# Наверно так по лучше.. но, не знаю? как с оптимизацией. Наверно можно еще короче записать ??
+-
+-# task5 = [i for i in range(100, 1001) if i % 2 == 0]
+-# print("Результат умножения всех четных чисел, равен:\n", reduce(lambda a, b: a * b, task5))
+\ No newline at end of file
++# print(task5)
++print("Результат умножения всех четных чисел, равен:\n", result)
+\ No newline at end of file
